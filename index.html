@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url("file:///C:/Users/vital/Downloads/Blue-Cool-Wallpaper-Black-Color.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white; /* Set text color to white */
+            font-family: Arial, sans-serif; /* Specify a font */
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        /* Style for the subscribe sign */
+        .subscribe-sign {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        /* Style for the subscribe text */
+        .subscribe-text {
+            font-size: 24px;
+            font-weight: bold; /* Make the text bold */
+            color: white; /* Set text color to white */
+            cursor: pointer; /* Change cursor on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        /* Style for the refresh button */
+        .refresh-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Position the links in bottom left and bottom right corners */
+        .bottom-left {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 40px; /* Increase font size */
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 40px; /* Increase font size */
+            color: red; /* Change text color to red */
+        }
+    </style>
+    <title>iBreakerGaming</title>
+    <script>
+        function refreshPage() {
+            location.reload(); // Reload the current page
+        }
+
+        function openVideo1() {
+            window.open('https://www.youtube.com/watch?v=Z9mWuDVO9rw&t', '_blank');
+        }
+
+        function openVideo2() {
+            window.open('https://www.youtube.com/watch?v=k3hA6WahLpk&t', '_blank');
+        }
+    </script>
+</head>
+<body>
+    <div class="center-text">
+        <h1>iBreakerGaming</h1>
+    </div>
+    <div class="center-text">
+        <h2>Minecraft, Geometry Dash, And Other Games!</h2>
+    </div>
+
+    <p>Hey, it's iBreakerGaming! On my YouTube channel, you'll dive into the thrilling world of Geometry Dash, where I conquer mind-bending levels with skill and creativity. We'll also explore the vast landscapes of Minecraft, embarking on epic building projects and survival challenges. But it's not just about the games. It's about the community we've built. Through live streams and interactions, we're a tight-knit gaming family sharing the excitement. So, whether you're into Geometry Dash, Minecraft, or just awesome gaming content, hit subscribe and let's journey together!</p>
+
+    <!-- Subscribe sign at the bottom -->
+    <div class="subscribe-sign">
+        <div class="bottom-left">
+            <a href="https://www.youtube.com/watch?v=Z9mWuDVO9rw&t" target="_blank" style="color: red; font-size: 40px;">Hardcore Ep 1</a>
+        </div>
+        <div class="bottom-right">
+            <a href="https://www.youtube.com/watch?v=k3hA6WahLpk&t" target="_blank" style="color: red; font-size: 40px;">Hardcore Ep 2</a>
+        </div>
+        <p class="subscribe-text" onclick="openVideo1()">Subscribe to my YouTube Channel</p>
+    </div>
+
+    <!-- Refresh button -->
+    <button class="refresh-button" onclick="refreshPage()">Refresh Page</button>
+</body>
+</html>
