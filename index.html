@@ -2,7 +2,52 @@
 <html>
 <head>
     <style>
-        /* Your existing CSS styles */
+        body {
+            background-image: url("https://github.com/iBreakerGTHB/iBreakerWEB/raw/main/images/Blue-Cool-Wallpaper-Black-Color.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        /* Style for the subscribe sign */
+        .subscribe-sign {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        /* Style for the subscribe text */
+        .subscribe-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Position the links in bottom left and bottom right corners */
+        .bottom-left {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 40px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 40px;
+            color: red;
+        }
     </style>
     <title>iBreakerGaming</title>
     <script>
@@ -12,11 +57,6 @@
 
         function openVideo2() {
             window.open('https://www.youtube.com/watch?v=k3hA6WahLpk&t', '_blank');
-        }
-
-        function scrollToContent() {
-            const contentSection = document.getElementById('content');
-            contentSection.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </head>
@@ -39,20 +79,18 @@
             <a href="https://www.youtube.com/watch?v=k3hA6WahLpk&t" target="_blank" style="color: red; font-size: 40px;">Hardcore Ep 2</a>
         </div>
         <p class="subscribe-text" onclick="openVideo1()">Subscribe to my YouTube Channel</p>
-    </div>
-
-    <!-- Add a link to scroll to the content section -->
-    <div class="center-text">
-        <a href="#" onclick="scrollToContent()" style="color: white; text-decoration: none; font-weight: bold;">Scroll Down to Content</a>
-    </div>
-
-    <!-- Content section to scroll down to -->
-    <div id="content">
+        <!-- Anchor for the second section -->
+        <div id="second-section"></div>
+        <!-- Link to scroll to the second section -->
         <div class="center-text">
-            <h2>More Content Awaits!</h2>
+            <a href="#second-section" style="color: white; text-decoration: none; font-weight: bold;">Scroll to Second Section</a>
         </div>
-        <p></p>
+    </div>
+
+    <!-- Content for the second section -->
+    <div id="second-section" class="center-text">
+        <h2>Welcome to the Second Section</h2>
+        <p>This is the content of the second section. You can add your content here.</p>
     </div>
 </body>
 </html>
-
