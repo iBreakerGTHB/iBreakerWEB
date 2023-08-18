@@ -2,65 +2,21 @@
 <html>
 <head>
     <style>
-        body {
-            background-image: url("https://github.com/iBreakerGTHB/iBreakerWEB/raw/main/images/Blue-Cool-Wallpaper-Black-Color.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: white; /* Set text color to white */
-            font-family: Arial, sans-serif; /* Specify a font */
-        }
-
-        .center-text {
-            text-align: center;
-        }
-
-        /* Style for the subscribe sign */
-        .subscribe-sign {
-            text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-        }
-
-        /* Style for the subscribe text */
-        .subscribe-text {
-            font-size: 24px;
-            font-weight: bold; /* Make the text bold */
-            color: white; /* Set text color to white */
-            cursor: pointer; /* Change cursor on hover */
-            text-decoration: underline; /* Add underline on hover */
-        }
-
-       
-
-        /* Position the links in bottom left and bottom right corners */
-        .bottom-left {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            font-size: 40px; /* Increase font size */
-        }
-
-        .bottom-right {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-size: 40px; /* Increase font size */
-            color: red; /* Change text color to red */
-        }
+        /* Your existing CSS styles */
     </style>
     <title>iBreakerGaming</title>
     <script>
-       
-
         function openVideo1() {
             window.open('https://www.youtube.com/watch?v=Z9mWuDVO9rw&t', '_blank');
         }
 
         function openVideo2() {
             window.open('https://www.youtube.com/watch?v=k3hA6WahLpk&t', '_blank');
+        }
+
+        function scrollToContent() {
+            const contentSection = document.getElementById('content');
+            contentSection.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </head>
@@ -85,47 +41,17 @@
         <p class="subscribe-text" onclick="openVideo1()">Subscribe to my YouTube Channel</p>
     </div>
 
-    
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            background-image: url("https://github.com/iBreakerGTHB/iBreakerWEB/raw/main/images/Blue-Cool-Wallpaper-Black-Color.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: white; /* Set text color to white */
-            font-family: Arial, sans-serif; /* Specify a font */
-        }
-
-        /* Copy the rest of your CSS from the first page here */
-    </style>
-    <script>
-        // Copy the rest of your scripts from the first page here
-    </script>
-</head>
-<body>
+    <!-- Add a link to scroll to the content section -->
     <div class="center-text">
-        <h1>Videos!</h1>
-    </div>
-    <div class="center-text">
-        <h2>More Content Awaits!</h2>
+        <a href="#" onclick="scrollToContent()" style="color: white; text-decoration: none; font-weight: bold;">Scroll Down to Content</a>
     </div>
 
-    <p>This is the second page of iBreakerGaming's website. You can add your content here.</p>
-
-    <!-- Subscribe sign at the bottom -->
-    <div class="subscribe-sign">
-        <!-- Copy the content from the first page's subscribe sign here -->
-    </div>
-
-    <!-- Add links or buttons to navigate between pages -->
-    <div class="center-text">
-        <a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Go back to Home</a>
+    <!-- Content section to scroll down to -->
+    <div id="content">
+        <div class="center-text">
+            <h2>More Content Awaits!</h2>
+        </div>
+        <p></p>
     </div>
 </body>
 </html>
